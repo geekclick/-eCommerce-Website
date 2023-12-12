@@ -1,8 +1,3 @@
-# React + Vite
+# eCommerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Explore a vast collection of PC, Xbox, and PlayStation games alongside a diverse range of physical toys and game characters on our comprehensive eCommerce platform for gamers of all ages.
