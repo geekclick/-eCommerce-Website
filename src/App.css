@@ -1,0 +1,40 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+details>summary {
+  list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary~* {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+.menuItems {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+  background-color: #111111fa;
+  color: #818181;
+}
+
+.hide {
+  display: block;
+  transform: translateX(-100%);
+}

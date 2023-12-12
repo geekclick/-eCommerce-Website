@@ -1,0 +1,20 @@
+
+
+.itemContent {
+  transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemPanel {
+  padding: 1em;
+}
+
+.chevron {
+  margin-right: auto;
+  transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+  width: 1em;
+  order: 1;
+}
+
+.itemBtnExpanded .chevron {
+  transform: rotate(180deg);
+}
