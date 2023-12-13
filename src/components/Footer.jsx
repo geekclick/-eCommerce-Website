@@ -1,10 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTelegram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 import Image from "./Image";
+import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 
 let FooterData = [
   {
@@ -61,18 +56,9 @@ export default function Footer() {
           </h1>
           {/* media icon */}
           <div className="flex justify-evenly">
-            <FontAwesomeIcon
-              icon={faTelegram}
-              className=" text-[#00d5ff] text-[0.8rem] md:text-[1.5rem] lg:text-[2rem] border-[1px]  border-[#00d5ff] rounded-full p-[0.2em]"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className=" text-[#00d5ff] text-[0.8rem] md:text-[1.5rem] lg:text-[2rem] border-[1px]  border-[#00d5ff] rounded-full p-[0.2em]"
-            />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className=" text-[#00d5ff] text-[0.8rem] md:text-[1.5rem] lg:text-[2rem] border-[1px]  border-[#00d5ff] rounded-full p-[0.2em]"
-            />
+            <FaTelegram />
+            <FaInstagram />
+            <FaTwitter />
           </div>
           {/* peyment icon */}
           <div className="flex space-x-1 lg:space-x-3 md:space-x-3">

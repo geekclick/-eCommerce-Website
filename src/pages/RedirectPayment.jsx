@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { FaRegEdit } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
 import Order from "../components/ProfilePage/Order";
 import OrderProgress from "../components/OrderProgress";
 import { Link } from "react-router-dom";

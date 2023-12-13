@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FaAngleDown } from "react-icons/fa";
 
 let ProductInfoData = [
   {
@@ -38,7 +37,10 @@ export default function ProductInfo() {
 
         {ProductInfoData.map((product, index) => {
           return (
-            <div className="flex space-x-10 md:space-x-10 lg:space-x-10 mt-3 md:mt-3 lg:mt-5 pb-2 md:pb-2 lg:pb-2  border-b-[2px] border-[#757575]" key={index}>
+            <div
+              className="flex space-x-10 md:space-x-10 lg:space-x-10 mt-3 md:mt-3 lg:mt-5 pb-2 md:pb-2 lg:pb-2  border-b-[2px] border-[#757575]"
+              key={index}
+            >
               <span className="text-[0.7rem] md:text-[0.9rem] lg:text-[1.1rem]  text-[#CFCFCF]">
                 {product.title}
               </span>
@@ -55,10 +57,7 @@ export default function ProductInfo() {
           مشاهده بیشتر
         </p>
         <button className="text-[0.5rem] md:text-[1rem] lg:text-[1rem] text-center text-[#CFCFCF] w-full">
-          <FontAwesomeIcon
-            icon={faAngleDown}
-            className="text-[#00d5ff] text-[0.8rem] md:text-[1rem] lg:text-[1.5rem]"
-          />
+          <FaAngleDown />
         </button>
       </div>
     </div>

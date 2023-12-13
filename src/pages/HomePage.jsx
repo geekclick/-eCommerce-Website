@@ -1,12 +1,10 @@
-import { useState } from "react";
 import ImageSlider from "../components/HomePage/ImageSlider";
 import LogoSlider from "../components/HomePage/LogoSlider";
 import ButtonSection from "../components/HomePage/ButtonSection";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ProductSection from "../components/HomePage/ProductSection";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleState } from "../store/reducers/commonSlice";
+import { useSelector } from "react-redux";
 
 export default function HomePage() {
   const { buttonState } = useSelector(({ commonSlice }) => commonSlice);

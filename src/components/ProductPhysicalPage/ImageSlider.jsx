@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import SwiperComponent from "../SwiperComponent";
 
 export default function ImageSlider({ product }) {
   const [image, setImage] = useState(product.src);
@@ -23,7 +22,6 @@ export default function ImageSlider({ product }) {
           })}
         </div>
         <div>
-          {/* <SwiperComponent image={image} imgList={product.sliderImages} /> */}
           <img src={image} alt="" className="h-[24rem]" />
         </div>
       </div>

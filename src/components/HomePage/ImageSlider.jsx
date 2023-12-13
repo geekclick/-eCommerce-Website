@@ -1,11 +1,9 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "../../assets/CSS/ImageSlider.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "../Image";
-// fix the img responsive problem so it can fit whole screen when its table or labtop but not for phone and  every picture   you can add and picture fit fit
 
 let ImageSliderData = [
   {

@@ -1,4 +1,3 @@
-import React from "react";
 import ProductImage from "../../assets/ProfilePageImages/productImage.png";
 
 export default function Order({ noEndLine }) {

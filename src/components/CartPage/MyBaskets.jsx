@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 function MyBaskets() {
   const { cart } = useSelector(({ cartSlice }) => cartSlice);
-  console.log(cart);
   const MyBaskets = cart.map((basket, index) => (
     <MyBasket myBasketData={basket} key={index} />
   ));
