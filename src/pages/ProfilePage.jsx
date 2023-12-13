@@ -1,5 +1,15 @@
+// hooks
 import React, { useState } from "react";
+
+// redux
 import { useDispatch, useSelector } from "react-redux";
+import {
+  addAddress,
+  setAddress,
+  updateAddressList,
+} from "../store/reducers/addressSlice";
+
+// components
 import DropDown from "../components/ProfilePage/DropDown";
 import Input from "../components/ProfilePage/Input";
 import Button from "../components/ProfilePage/Button";
@@ -7,6 +17,8 @@ import MyOrder from "../components/ProfilePage/MyOrder";
 import DiscountCode from "../components/ProfilePage/DiscountCode";
 import Address from "../components/ProfilePage/Address";
 import Ticket from "../components/ProfilePage/Ticket";
+
+// icons
 import { FaHome } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { HiIdentification } from "react-icons/hi2";
@@ -15,23 +27,21 @@ import { TbDiscount2 } from "react-icons/tb";
 import { GiPathDistance } from "react-icons/gi";
 import { BiSolidDiscount } from "react-icons/bi";
 import { FaRegEdit } from "react-icons/fa";
+
+// react-router-dom
 import { Link } from "react-router-dom";
-import {
-  addAddress,
-  setAddress,
-  updateAddressList,
-} from "../store/reducers/addressSlice";
 
 export default function MainBox() {
-  const dispach = useDispatch();
   const [editProfilepic, setEditProfilepic] = useState(false);
   const [newTicket, setNewTicket] = useState(false);
   const [newAddress, setNewAddress] = useState(false);
   const [edit, setEdit] = useState(false);
 
+  const dispach = useDispatch();
   const { address, addressList } = useSelector(
     ({ addressSlice }) => addressSlice
   );
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (edit) {
@@ -42,12 +52,6 @@ export default function MainBox() {
       console.log(addressList);
     }
     setNewAddress(false);
-  };
-
-  const [value, setValue] = useState();
-  const handleChange = (e) => {
-    setValue(e.target.value);
-    dispach(setAddress({ ...address, description: e.target.value }));
   };
 
   return (
@@ -165,7 +169,14 @@ export default function MainBox() {
                       </div>
                       <textarea
                         value={address.description}
-                        onChange={handleChange}
+                        onChange={(e) =>
+                          dispach(
+                            setAddress({
+                              ...address,
+                              description: e.target.value,
+                            })
+                          )
+                        }
                         className="bg-[#000] opacity-75 w-full text-right xl:p-2 xl:my-8 xl:text-lg text-sm"
                         placeholder="شرح آدرس"
                         cols="30"
