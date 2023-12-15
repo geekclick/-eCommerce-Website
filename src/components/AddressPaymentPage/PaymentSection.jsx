@@ -3,22 +3,22 @@ import { FaSquareFull } from "react-icons/fa";
 
 let PaymentSectionData = [
   {
-    src: "/src/assets/PaymentSection/1.png",
+    src: "PaymentSection/1.png",
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/2.png",
+    src: "PaymentSection/2.png",
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/3.png",
+    src: "PaymentSection/3.png",
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/4.png",
+    src: "PaymentSection/4.png",
     alt: "/",
     link: "",
   },
