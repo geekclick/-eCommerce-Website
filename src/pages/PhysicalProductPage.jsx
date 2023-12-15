@@ -4,9 +4,11 @@ import PhysicalProductInfoOption from "../components/ProductPhysicalPage/Physica
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
+import CommentSection from "../components/CommentSection";
 
 export default function PhysicalProductPage() {
   const { product } = useSelector(({ productSlice }) => productSlice);
+  const { commentList } = useSelector(({ commentSlice }) => commentSlice);
   return (
     <>
       <Navbar />
@@ -17,6 +19,16 @@ export default function PhysicalProductPage() {
         </div>
         <PhysicalProductInfoOption product={product} />
       </div>
+      {commentList.map((item, index) => {
+        return (
+          <CommentSection
+            key={index}
+            date={item.date}
+            name={item.name}
+            comment={item.comment}
+          />
+        );
+      })}
       <Footer />
     </>
   );

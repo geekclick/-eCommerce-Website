@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import Image from "../Image";
@@ -6,7 +6,7 @@ import Button from "../ProfilePage/Button";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../store/reducers/cartSlice";
 import { useNavigate } from "react-router-dom";
-
+import { addComment } from "../../store/reducers/commentSlice";
 let ProductInfo = [
   {
     src: "/src/assets/PhysicalPageImages/ProductImg/2.png",
@@ -25,10 +25,16 @@ let ProductInfo = [
   },
 ];
 
+let commentData = {
+  date: "",
+  name: "",
+  email: "",
+  comment: "",
+};
 export default function PhysicalProductInfoOption({ product }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
+  const [value, setValue] = useState(commentData);
   const onClick = () => {
     dispatch(addProduct([product]));
     navigate("/cart");
@@ -37,7 +43,7 @@ export default function PhysicalProductInfoOption({ product }) {
   const options = ["Gozine 1", "Gozine 2", "Gozine 3"];
   const defaultOption = options[0];
   return (
-    <div className="p-3 mt-8 xl:px-16 lg:px-8 xl:w-[30%] lg:w-[50%] w-[90%] mx-auto">
+    <div className="p-3 mt-8 xl:px-16 lg:px-8 xl:w-[25%] lg:w-[50%] w-[90%] mx-auto">
       <h2 className="text-[12px] md:text-[20px] lg:text-[12px] text-right ">
         فیزیکال &gt; رسته &gt; نام شرکت سازنده و محصول
       </h2>
@@ -151,23 +157,44 @@ export default function PhysicalProductInfoOption({ product }) {
             <p className="text-[12px] md:text-[20px] lg:text-[12px]">نظرات</p>
           </div>
           <div>
-            <input
-              type="text"
-              className="w-full bg-[#5E5E5E] text-white p-2 my-2 text-right"
-              placeholder="نام"
-            />
-            <input
-              type="text"
-              className="w-full bg-[#5E5E5E] text-white p-2 my-2 text-right"
-              placeholder="ایمیل"
-            />
-            <textarea
-              type="text"
-              cols={8}
-              className="w-full bg-[#5E5E5E] text-white p-2 pb-20 my-2 text-right"
-              placeholder="نظر شما"
-            />
-            <Button text={"ثبت نظر"} moreClasses={"w-[40%] m-auto"} />
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                console.log(value);
+                dispatch(addComment({ ...value, date: `${new Date()}` }));
+                setValue(commentData);
+              }}
+            >
+              <input
+                value={value.name}
+                onChange={(e) => setValue({ ...value, name: e.target.value })}
+                type="text"
+                className="w-full bg-[#5E5E5E] text-white p-2 my-2 text-right"
+                placeholder="نام"
+              />
+              <input
+                value={value.email}
+                onChange={(e) => setValue({ ...value, email: e.target.value })}
+                type="text"
+                className="w-full bg-[#5E5E5E] text-white p-2 my-2 text-right"
+                placeholder="ایمیل"
+              />
+              <textarea
+                value={value.comment}
+                onChange={(e) =>
+                  setValue({ ...value, comment: e.target.value })
+                }
+                type="text"
+                cols={8}
+                className="w-full bg-[#5E5E5E] text-white p-2 pb-20 my-2 text-right"
+                placeholder="نظر شما"
+              />
+              <Button
+                text={"ثبت نظر"}
+                type={"submit"}
+                moreClasses={"w-[40%] m-auto"}
+              />
+            </form>
           </div>
         </div>
       </div>
