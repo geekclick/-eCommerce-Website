@@ -3,22 +3,22 @@ import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 
 let FooterData = [
   {
-    src: "Footer/1.png",
+    src: "/Footer/1.png",
     alt: "/",
     link: "",
   },
   {
-    src: "Footer/2.png",
+    src: "/Footer/2.png",
     alt: "/",
     link: "",
   },
   {
-    src: "Footer/3.png",
+    src: "/Footer/3.png",
     alt: "/",
     link: "",
   },
   {
-    src: "Footer/4.png",
+    src: "/Footer/4.png",
     alt: "/",
     link: "",
   },
