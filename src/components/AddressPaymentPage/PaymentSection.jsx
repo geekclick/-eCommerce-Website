@@ -7,38 +7,22 @@ import Image4 from "/src/assets/PaymentSection/4.png";
 
 let PaymentSectionData = [
   {
-<<<<<<< HEAD
     src: Image1,
-=======
-    src: "PaymentSection/1.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image2,
-=======
-    src: "PaymentSection/2.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image3,
-=======
-    src: "PaymentSection/3.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image4,
-=======
-    src: "PaymentSection/4.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },

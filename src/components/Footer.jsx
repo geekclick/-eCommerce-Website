@@ -7,38 +7,22 @@ import Image4 from "/src/assets/Footer/4.png"
 
 let FooterData = [
   {
-<<<<<<< HEAD
     src: Image1,
-=======
-    src: "/Footer/1.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image2,
-=======
-    src: "/Footer/2.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image3,
-=======
-    src: "/Footer/3.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
   {
-<<<<<<< HEAD
     src: Image4,
-=======
-    src: "/Footer/4.png",
->>>>>>> 0a3fb883645b156961af3f144dbaa89f793df412
     alt: "/",
     link: "",
   },
