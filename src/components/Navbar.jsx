@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsCart4 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import GameSvg from "/game.svg";
 
 const Navbar = () => {
   const { cart } = useSelector(({ cartSlice }) => cartSlice);
@@ -16,7 +17,7 @@ const Navbar = () => {
           <Link className="text-3xl font-bold leading-none" to={"/"}>
             <img
               className="h-10 absolute z-50 top-4 left-5 md:left-20"
-              src="/game.svg"
+              src={GameSvg}
               alt="logo"
             />
           </Link>

@@ -1,24 +1,28 @@
 import { useState } from "react";
 import { FaSquareFull } from "react-icons/fa";
+import Image1 from "/src/assets/PaymentSection/1.png";
+import Image2 from "/src/assets/PaymentSection/2.png";
+import Image3 from "/src/assets/PaymentSection/3.png";
+import Image4 from "/src/assets/PaymentSection/4.png";
 
 let PaymentSectionData = [
   {
-    src: "/src/assets/PaymentSection/1.png",
+    src: Image1,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/2.png",
+    src: Image2,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/3.png",
+    src: Image3,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/PaymentSection/4.png",
+    src: Image4,
     alt: "/",
     link: "",
   },

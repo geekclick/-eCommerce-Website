@@ -4,30 +4,35 @@ import "../../assets/CSS/ImageSlider.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "../Image";
+import Image1 from "/src/assets/HomePageImages/ImageSlider/1.png";
+import Image2 from "/src/assets/HomePageImages/ImageSlider/2.jpg";
+import Image3 from "/src/assets/HomePageImages/ImageSlider/3.jpg";
+import Image4 from "/src/assets/HomePageImages/ImageSlider/4.jpg";
+import Image5 from "/src/assets/HomePageImages/ImageSlider/5.jpg";
 
 let ImageSliderData = [
   {
-    src: "/src/assets/HomePageImages/ImageSlider/1.png",
+    src: Image1,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/ImageSlider/2.jpg",
+    src: Image2,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/ImageSlider/3.jpg",
+    src: Image3,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/ImageSlider/4.jpg",
+    src: Image4,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/ImageSlider/5.jpg",
+    src: Image5,
     alt: "/",
     link: "",
   },
@@ -51,7 +56,11 @@ export default function ImageSlider() {
         {ImageSliderData.map((img, index) => {
           return (
             <SwiperSlide className="w-full h-2/4" key={index}>
-              <Image imgAlt={img.alt} imgSrc={img.src} imgClass={"h-fit aspect-[1920/829]"} />
+              <Image
+                imgAlt={img.alt}
+                imgSrc={img.src}
+                imgClass={"h-fit aspect-[1920/829]"}
+              />
             </SwiperSlide>
           );
         })}

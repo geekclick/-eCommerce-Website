@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addProduct } from "../../store/reducers/cartSlice";
 import GameDetails from "./GameDetails";
+import BlueIcon from "/src/assets/DigitalPageImages/blue-icon.png";
 
 function ProductDetails({ product }) {
   const dispatch = useDispatch();
@@ -19,11 +20,7 @@ function ProductDetails({ product }) {
           <h4 className="detail--label - text-[#e6e6e6] text-right text-[0.9rem] md:text-[0.7rem] lg:text-[0.9rem] not-italic font-light leading-10 tracking-[0.01875rem] pr-[0.7em]">
             اطلاعات حساب کاربری
           </h4>
-          <img
-            src="/src/assets/DigitalPageImages/blue-icon.png"
-            alt=""
-            className="detail--icon - w-4 h-4"
-          />
+          <img src={BlueIcon} alt="" className="detail--icon - w-4 h-4" />
         </div>
         <div className="detail-personal-information - flex flex-col justify-center items-center bg-[#2e2e2e]">
           <input

@@ -7,19 +7,21 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../../store/reducers/cartSlice";
 import { useNavigate } from "react-router-dom";
 import { addComment } from "../../store/reducers/commentSlice";
+import Image1 from "/src/assets/PhysicalPageImages/ProductImg/1.png"
+import Image2 from "/src/assets/PhysicalPageImages/ProductImg/2.png"
 let ProductInfo = [
   {
-    src: "/src/assets/PhysicalPageImages/ProductImg/2.png",
+    src: Image2,
     name: "Product Name Product Name",
     price: "100,000,000",
   },
   {
-    src: "/src/assets/PhysicalPageImages/ProductImg/1.png",
+    src: Image1,
     name: "Product Name Product Name",
     price: "100,000,000",
   },
   {
-    src: "/src/assets/PhysicalPageImages/ProductImg/2.png",
+    src: Image2,
     name: "Product Name Product Name",
     price: "100,000,000",
   },

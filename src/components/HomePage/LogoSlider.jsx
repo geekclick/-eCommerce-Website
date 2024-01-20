@@ -5,45 +5,52 @@ import "swiper/css/navigation";
 import Logo from "./Logo";
 import "../../assets/CSS/LogoSlider.css";
 import { useEffect, useState } from "react";
+import Image1 from "/src/assets/HomePageImages/LogoSlider/1.png";
+import Image2 from "/src/assets/HomePageImages/LogoSlider/2.png";
+import Image3 from "/src/assets/HomePageImages/LogoSlider/3.png";
+import Image4 from "/src/assets/HomePageImages/LogoSlider/4.png";
+import Image5 from "/src/assets/HomePageImages/LogoSlider/5.png";
+import Image6 from "/src/assets/HomePageImages/LogoSlider/6.png";
+import Image7 from "/src/assets/HomePageImages/LogoSlider/7.png";
 
 let logoSliderData = [
   {
-    src: "/src/assets/HomePageImages/LogoSlider/1.png",
+    src: Image1,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/2.png",
+    src: Image2,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/3.png",
+    src: Image3,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/4.png",
+    src: Image4,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/5.png",
+    src: Image5,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/6.png",
+    src: Image6,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/7.png",
+    src: Image7,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/HomePageImages/LogoSlider/7.png",
+    src: Image7,
     alt: "/",
     link: "",
   },

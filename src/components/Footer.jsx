@@ -1,24 +1,28 @@
 import Image from "./Image";
 import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
+import Image1 from "/src/assets/Footer/1.png"
+import Image2 from "/src/assets/Footer/2.png"
+import Image3 from "/src/assets/Footer/3.png"
+import Image4 from "/src/assets/Footer/4.png"
 
 let FooterData = [
   {
-    src: "/src/assets/Footer/1.png",
+    src: Image1,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/Footer/2.png",
+    src: Image2,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/Footer/3.png",
+    src: Image3,
     alt: "/",
     link: "",
   },
   {
-    src: "/src/assets/Footer/4.png",
+    src: Image4,
     alt: "/",
     link: "",
   },
