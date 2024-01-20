@@ -1,6 +1,6 @@
 export default function LoginCreatAccount() {
   return (
-    <div className=" bg-[url('Background.png')] min-h-screen h-screen bg-cover ">
+    <div className=" bg-LoginBackgroundImage min-h-screen h-screen bg-cover ">
       <div className="login-creat-account-container - h-auto absolute left-2/4 top-2/4 -translate-x-1/2 -translate-y-1/2  [@media(max-width:500px)]:w-full w-[90%] max-w-[37.5rem] text-[#e6e6e6] bg-[#000] pt-[2.44em] pr-[2.86em] pb-[0.62em] pl-[4.88em] [font-family:inherit]  flex flex-col justify-center items-center">
         <div className="login-creat-account-links - inline-block mb-[1em]">
           <a
