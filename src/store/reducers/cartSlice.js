@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
+import ComputerImage from "/src/assets/CartPageImages/computer.png"
 
 let initialState = {
   cart: [
     [
       {
         productTitle: "ولورانت پوینت ترکیه (دیجیتال کد)",
-        src: "/src/assets/CartPageImages/computer.png",
+        src: ComputerImage,
         key: 0,
       },
     ],
